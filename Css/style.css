@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+--olive-color:#a4bc47;
+}
+body{
+  width: 100%;
+  font-family: "PT Serif", serif;
+}
+
+.container{
+  width: 80%;
+  margin: 3rem auto;
+  border-radius: 1px;
+}
+span , .active{
+  font-weight: 700;
+  color:var(--olive-color) ;
+}
+
+h1{
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+p{
+  font-size: 1rem;
+  letter-spacing: .6px;
+  line-height: 25px;
+}
+
+button{
+  font-size: 0.7rem;
+  padding: 15px 8px;
+  width: 130px;
+  color: white;
+  background-color: var(--olive-color);
+  border-radius: 8px;
+  border: 1px solid var(--olive-color);
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  width: 260px;
+}
+
+.nav-option ul{
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+ul li a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.banner{
+  display: flex;
+  justify-content: space-around;
+}
+.banner-content{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  row-gap: 25px;
+}
+
+.banner-image{
+  width: 500px;
+}
+.banner-image img{
+  width:100%;
+}
+
+
+@media screen and (max-width:767px) {
+  .container{
+  width: 90%;
+  margin: 1rem auto;
+  }
+  .nav-bar{
+    flex-direction: column-reverse;
+  }
+
+  .nav-option{
+    font-size: 1rem;
+    font-weight: 900;
+  }
+  .logo{
+    margin: 20px 0;
+  }
+  .banner{
+    width: 80%;
+    flex-direction: column;
+  }
+  .banner-content{
+    display: flex;
+     justify-content: center;
+    text-align: center;
+  }
+
+  .banner-image{
+    width: 90%;
+    margin: 20px auto;
+  }
+}
