@@ -231,9 +231,10 @@ footer h3{
     flex-direction: column-reverse;
   }
 
-  .nav-option{
+  .nav-option ul{
     font-size: 1rem;
     font-weight: 900;
+    gap: 1.5rem;
   }
   .logo{
     margin: 20px 0;
